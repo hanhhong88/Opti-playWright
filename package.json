@@ -1,0 +1,22 @@
+{
+  "name": "opti-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanhhong88/Opti-playWright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanhhong88/Opti-playWright/issues"
+  },
+  "homepage": "https://github.com/hanhhong88/Opti-playWright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2"
+  }
+}
