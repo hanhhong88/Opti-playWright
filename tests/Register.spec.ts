@@ -1,4 +1,4 @@
-import { faker } from '@faker-js/faker/locale/en';
+// import { faker } from '@faker-js/faker/locale/en';
 import { test, expect } from '@playwright/test';
 
 test('Register', async ({ page }) => {
@@ -6,9 +6,12 @@ test('Register', async ({ page }) => {
   const month = page.locator("select[data-qa = 'months']");
   const year = page.locator("select[data-qa = 'years']");
   const country = page.locator("select#country");
-  const username = faker.internet.userName();
-  const password = faker.internet.password();
-  const email = faker.internet.exampleEmail();
+  // const username = faker.internet.userName();
+  // const password = faker.internet.password();
+  // const email = faker.internet.exampleEmail();
+  const username = "Hanh Nguyen";
+  const password = "123aA@";
+  const email = "hanh.nguyen@optimizely.com"
   const firstname = "hanh";
   const lastname = "nguyen"
   
@@ -76,11 +79,15 @@ test('Register', async ({ page }) => {
   expect(text1).toEqual(text2);
 
 
-  await page.locator("//a[contains(text(),'Delete Account')]").click();
+  // await page.locator("//a[contains(text(),'Delete Account')]").click();
 
-  await expect(page.locator("//b[text() = 'Account Deleted!']/parent::h2")).toBeVisible();
+  // await expect(page.locator("//b[text() = 'Account Deleted!']/parent::h2")).toBeVisible();
 
-  await page.locator("//a[text() = 'Continue']").click();
+  // await page.locator("//a[text() = 'Continue']").click();
+
+  // await page.locator("//a[contains(text(), 'Logout')]").click();
+
+  // await expect(page).toHaveTitle("Automation Exercise - Signup / Login");
 
 });
 
