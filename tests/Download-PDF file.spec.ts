@@ -29,7 +29,7 @@ test('Download pdf file', async ({ page , headless}) => {
     ])
 
     newPage.on('response', async (response) => {
-      expect(response.headers()['content-type'].tobe('application/pdfs'))
+      expect.soft(response.headers()['content-type']).toBe('application/pdfs')
     })
 
     await newPage.reload();
